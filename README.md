@@ -1,2 +1,2 @@
 # iNET.vn-En
-iNET.vn API English
+iNET.vn API english version
