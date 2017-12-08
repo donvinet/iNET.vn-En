@@ -56,8 +56,8 @@ Tạo một khách hàng mới
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
 **birthday**: ngày sinh  
-**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
-**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
+**country**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
+**province**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
 **phone (bắt buộc)**: số điện thoại  
 
@@ -84,8 +84,8 @@ Cập nhật thông tin khách hàng
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
 **birthday**: ngày sinh  
-**country**: [mã quốc gia](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#country)  
-**province**: [mã tỉnh thành](https://github.com/thesunbg/iNET.vn/blob/master/reseller_category.md#province)  
+**country**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
+**province**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
 **phone (bắt buộc)**: số điện thoại  
 
@@ -116,7 +116,7 @@ Cập nhật mật khẩu đăng nhập của khách hàng
 ```
 **id (bắt buộc)**: id khách hàng   
 **password (bắt buộc)**: id khách hàng   
-**passwordForgotToken (bắt buộc)**: [token quên mật khẩu](https://github.com/thesunbg/iNET.vn/blob/master/reseller_customer.md#quên-mật-khẩu)   
+**passwordForgotToken (bắt buộc)**: [token quên mật khẩu](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_customer.md#quên-mật-khẩu)   
 
 ## [Chi tiết](#get)
 Lấy thông tin khách hàng qua id
