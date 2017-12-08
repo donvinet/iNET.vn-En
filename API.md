@@ -1,4 +1,4 @@
-# iNET API
+# iNET API English
 
 * <a href="https://github.com/thesunbg/iNET.vn/blob/master/reseller.md">API cho đại lý</a>
 
