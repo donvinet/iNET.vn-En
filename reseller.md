@@ -1,4 +1,4 @@
-* [Sinh mã token](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_authentication.md)
+* [Generate token](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_authentication.md)
 * [Danh mục chung](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md)
 * [Khách hàng](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_customer.md)
 * [Tên miền](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_domain.md)
