@@ -29,7 +29,7 @@ Tìm kiếm danh sách tên miền của đại lý
    "idnName": "querystring",
    "registrant": "querystring",
    "suffix": "querystring",
-   "registrar": "inet",
+   "registrar": "hitek",
    "status": "active",
    "contract": true,
    "verifyStatus": true,
@@ -48,7 +48,7 @@ Tìm kiếm danh sách tên miền của đại lý
 **idnName**: tên miền tiếng việt  
 **registrant**: tên chủ thể  
 **suffix**: đuôi tên miền  
-**registrar**: nhà đăng ký [{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]  
+**registrar**: nhà đăng ký [{'hitek': 'tên miền .vn'}]  
 **status**: trạng thái tên miền[{'active': 'đang hoạt động', {'suspended': 'đang tạm ngưng'}, {'deleted': 'đã xóa'}]  
 **contract**: đã có bản khai? true/false  
 **verifyStatus**: tên miền đã được xác nhận? true/false  
@@ -69,12 +69,12 @@ Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay 
 {
    "name": "xn--tnmin-hsa0954c.vn",
    "idnName": "tênmiền.vn",
-   "registrar": "inet"
+   "registrar": "hitek"
 }
 ```
 **name (bắt buộc)**: tên miền, nếu là tên miền tiếng việt thì là chuỗi punycode của trường idnName  
 **idnName**: tên miền tiếng việt  
-**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]
+**registrar (bắt buộc)**: nhà đăng ký[{'hitek': 'tên miền .vn'}]
 
 ## [Chuyển mã puny code tên miền tiếng việt](#validateidnname)
 Chuyển mã puny code cho tên miền tiếng việt
@@ -99,7 +99,7 @@ Chuyển mã puny code cho tên miền tiếng việt
    "idnName": "tênmiền.vn",
    "period": 1,
    "customerId": 0,
-   "registrar": "inet", 
+   "registrar": "hitek", 
    "nsList": [''], 
    "contacts": [
       {
@@ -209,10 +209,10 @@ Cập nhật nameserver của tên miền
    "id": 0,
    "nsList": [
       {
-         "hostname": "ns3.inet.vn"
+         "hostname": "ns3.it.vn"
       },
       {
-         "hostname": "ns4.inet.vn"
+         "hostname": "ns4.it.vn"
       }
    ]
 }
@@ -230,11 +230,11 @@ Cập nhật nameserver theo tên miền(childdns) của tên miền
    "id": 0,
    "hostList": [
       {
-         "hostname": "ns3.inet.vn",
+         "hostname": "ns3.it.vn",
          "ipv4": "192.168.1.1"
       },
       {
-         "hostname": "ns4.inet.vn",
+         "hostname": "ns4.it.vn",
          "ipv4": "192.168.1.1"
       }
    ]
