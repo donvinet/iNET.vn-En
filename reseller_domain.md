@@ -155,7 +155,7 @@ Chuyển mã puny code cho tên miền tiếng việt
 **idnName**: tên miền tiếng việt  
 **period (bắt buộc)**: số năm đăng ký, <= 10 năm  
 **customerId (bắt buộc)**: id của khách hàng  
-**registrar (bắt buộc)**: nhà đăng ký[{'inet': 'tên miền .vn'},{'inet-global': 'tên miền quốc tế'}]  
+**registrar (bắt buộc)**: nhà đăng ký[{'hitek': 'tên miền .vn'}]  
 **nsList (bắt buộc)**: danh sách nameserver  
 **contacts (bắt buộc)**: danh sách contact của tên miền    
 
