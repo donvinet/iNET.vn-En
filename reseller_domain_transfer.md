@@ -79,7 +79,7 @@ Gửi yêu cầu chuyển đổi tên miền
 {
    "name": "example.vn",
    "authCode": "xxxxxx",
-   "registrar": "inet"
+   "registrar": "hitek"
 }
 ```
 **name (bắt buộc)**: tên miền  
