@@ -42,7 +42,7 @@ Tạo mới contact
 ```
 {
    "fullname": "Nguyễn Văn A",
-   "registrar": "inet",
+   "registrar": "hitek",
    "organizationName": "",
    "email": "a@example.vn",
    "phone": "+84-123456778",
