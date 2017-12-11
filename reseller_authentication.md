@@ -1,29 +1,29 @@
-# [Sinh mã token](#Authentication)
-Các API cho đại lý yêu cầu có mã token để xác thực quyền, sử dụng tài khoản và mật khẩu, địa chỉ IP đã đăng ký với DOT VN để tiến hành xác thực và lấy mã token.  
-Hệ thống sử dụng chuẩn phương thức JSON Web Tokens(RFC 7519). 
+# [Generate tokens](#Authentication)
+APIs for DOT VN Resellers require a token code to authenticate, use the account and password, IP address registered with DOT VN to perform authentication and retrieve the token code.  
+The system uses the JSON Web Tokens (RFC 7519) standard. 
 
 > **Host:** dotvn.vn  
-> **Cổng:** 443  
+> **Port:** 443  
 > **API:** /api/sso/v1/user/signin  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "email": "youremail@example.vn",
    "password": "yourpassword"
 }
 ```
-**email (bắt buộc)**: Email tài khoản được cung cấp cho đại lý  
-**password (bắt buộc)**: Mật khẩu tài khoản được cung cấp cho đại lý
+**Email (required)**: Email account provided to Resellers  
+**Password (required)**: Password provided to Resellers
 
-> **Dữ liệu trả về(JSON):**   
+> **Data returned (JSON):**   
 ```
 {
    "email": "youremail@example.vn",
    "token": "xxx"
 }
 ```
-> Sử dụng chuỗi token nhận được để set vào headers mỗi API gửi đi:  
+> Use the received token string to set the headers for each API’s submission:  
 ```
 { headers: 
    {
