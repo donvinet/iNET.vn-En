@@ -1,5 +1,5 @@
-# [Danh mục chung](#category)
-* [Danh sách tỉnh thành](#danh-sách-tỉnh-thành)
+# [General Category](#category)
+* [List province](#danh-sách-tỉnh-thành)
 * [Danh sách quốc gia](#danh-sách-quốc-gia)
 * [Danh sách đuổi tên miền](#danh-sách-đuôi-tên-miền)
 ## [Danh sách tỉnh thành](#province)
