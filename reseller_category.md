@@ -1,33 +1,33 @@
 # [General Category](#category)
-* [List province](#danh-sách-tỉnh-thành)
-* [Danh sách quốc gia](#danh-sách-quốc-gia)
-* [Danh sách đuổi tên miền](#danh-sách-đuôi-tên-miền)
-## [Danh sách tỉnh thành](#province)
-Danh sách các tỉnh thành của Việt Nam
+* [List of provinces](#danh-sách-tỉnh-thành)
+* [List of Countries](#danh-sách-quốc-gia)
+* [List of Domain names extensions ](#danh-sách-đuôi-tên-miền)
+## [List of provinces](#province)
+List of Vietnam provinces
 > **API:** /api/rms/v1/category/provincelist  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    
 }
 ```
 
-## [Danh sách quốc gia](#country)
-Danh sách các quốc gia trên thế giới
+## [List of Countries](#country)
+List of Countries in the world
 > **API:** /api/rms/v1/category/countrylist  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    
 }
 ```
-## [Danh sách đuôi tên miền](#suffix)
-Danh sách các đuôi tên miền trên hệ thống
+## [List of Domain names extensions](#suffix)
+List of domain extensions on the system
 > **API:** /api/rms/v1/suffix/list  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    
