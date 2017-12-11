@@ -28,8 +28,8 @@ Tìm kiếm khách hàng của đại lý
 **phone**: số điện thoại  
 **page**: trang, mặc định 0  
 **pageSize**: số lượng KH lấy về, mặc định 30  
-**fromCreatedDate**: ngày tạo mới từ  
-**toCreatedDate**: ngày tạo mới tới  
+**fromCreatedDate**: ngày tạo mới từ(MM/DD/YYYY HH:MI)  
+**toCreatedDate**: ngày tạo mới tới(MM/DD/YYYY HH:MI)  
 
 ## [Tạo mới](#create)
 Tạo một khách hàng mới
@@ -52,14 +52,14 @@ Tạo một khách hàng mới
 ```
 **email (bắt buộc)**: email khách hàng  
 **password (bắt buộc)**: mật khẩu  
-**fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
+**fullname (bắt buộc)**: họ [tên đệm] tên(ví dụ: Nguyễn Văn A)  
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
 **birthday**: ngày sinh  
 **country**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
 **province**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
-**phone (bắt buộc)**: số điện thoại  
+**phone (bắt buộc)**: số điện thoại(+CC-YYYYYYYYY)  
 
 ## [Cập nhật thông tin](#update)
 Cập nhật thông tin khách hàng
@@ -80,14 +80,14 @@ Cập nhật thông tin khách hàng
 }
 ```
 **id (bắt buộc)**: id khách hàng   
-**fullname (bắt buộc)**: tên đầy đủ, bao gồm cả họ  
+**fullname (bắt buộc)**: họ [tên đệm] tên(ví dụ: Nguyễn Văn A)  
 **organizationName**: tên tổ chức  
 **gender**: giới tính ['male', 'female']  
 **birthday**: ngày sinh  
 **country**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
 **province**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
 **address (bắt buộc)**: địa chỉ  
-**phone (bắt buộc)**: số điện thoại  
+**phone (bắt buộc)**: số điện thoại(+CC-YYYYYYYYY)  
 
 
 ## [Quên mật khẩu](#forgotpassword)
