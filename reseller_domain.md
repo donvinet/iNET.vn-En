@@ -156,8 +156,8 @@ Chuyển mã puny code cho tên miền tiếng việt
 **period (bắt buộc)**: số năm đăng ký, <= 10 năm  
 **customerId (bắt buộc)**: id của khách hàng  
 **registrar (bắt buộc)**: nhà đăng ký[{'hitek': 'tên miền .vn'}]  
-**nsList (bắt buộc)**: danh sách nameserver  
-**contacts (bắt buộc)**: danh sách contact của tên miền    
+**nsList **: danh sách nameserver, bỏ trống sẽ lấy mặc định theo cấu hình của đại lý  
+**contacts (bắt buộc)**: danh sách contact của tên miền, [chi tiết](https://github.com/dotvnapi/dotvn-api/blob/master/reseller_contact.md)    
 
 ## [Duy trì](#renew)
 Duy trì tên miền
