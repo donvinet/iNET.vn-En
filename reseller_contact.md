@@ -1,12 +1,12 @@
 # [Contact](#contact)
-* [Danh sách](#danh-sách)
-* [Tạo mới](#tạo-mới)
-* [Chi tiết](#chi-tiết)
-## [Danh sách](#search)
-Tìm kiếm danh sách contact của đại lý
+* [List](#danh-sách)
+* [Create new](#tạo-mới)
+* [Detail](#chi-tiết)
+## [List](#search)
+Search contact list of reseller
 > **API:** /api/rms/v1/contact/search  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "page": 0,
