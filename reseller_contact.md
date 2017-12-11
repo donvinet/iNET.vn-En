@@ -53,7 +53,7 @@ Tạo mới contact
    "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}",
 }
 ```
-**fullname (bắt buộc)**: tên contact  
+**fullname (bắt buộc)**: họ [tên đệm] tên(ví dụ: Nguyễn Văn A)  
 **registrar (bắt buộc)**: nhà đăng ký  
 **organizationName**: tên tổ chức(nếu contact là tổ chức)  
 **email (bắt buộc)**: email  
