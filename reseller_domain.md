@@ -53,12 +53,12 @@ Tìm kiếm danh sách tên miền của đại lý
 **contract**: đã có bản khai? true/false  
 **verifyStatus**: tên miền đã được xác nhận? true/false  
 **privacyProtection**: tên miền có sử dụng dịch vụ bảo vệ? true/false  
-**fromIssueDate**: ngày đăng ký từ  
-**toIssueDate**: ngày đăng ký tới  
-**fromRenewDate**: ngày duy trì từ  
-**toRenewDate**: "ngày duy trì tới  
-**fromExpireDate**: ngày hết hạn từ  
-**toExpireDate**: ngày hết hạn tới  
+**fromIssueDate**: ngày đăng ký từ(MM/DD/YYYY HH:MI)  
+**toIssueDate**: ngày đăng ký tới(MM/DD/YYYY HH:MI)  
+**fromRenewDate**: ngày duy trì từ(MM/DD/YYYY HH:MI)  
+**toRenewDate**: "ngày duy trì tới(MM/DD/YYYY HH:MI)  
+**fromExpireDate**: ngày hết hạn từ(MM/DD/YYYY HH:MI)  
+**toExpireDate**: ngày hết hạn tới(MM/DD/YYYY HH:MI)  
 
 ## [Kiểm tra sự tồn tại](#checkavailable)
 Kiểm tra sự tồn tại của tên miền có thể đăng ký được hay không
@@ -173,7 +173,7 @@ Duy trì tên miền
 ```
 **id (bắt buộc)**: id tên miền  
 **period (bắt buộc)**: số năm đăng ký, <= 10 năm  
-**expireDate (bắt buộc)**: ngày hết hạn hiện tại của tên miền  
+**expireDate (bắt buộc)**: ngày hết hạn hiện tại của tên miền(MM/DD/YYYY HH:MI)  
 
 ## [Ẩn thông tin tên miền](#privacyprotection)
 Ẩn thông tin tên miền trên whois
