@@ -57,7 +57,7 @@ Tạo mới contact
 **registrar (bắt buộc)**: nhà đăng ký  
 **organizationName**: tên tổ chức(nếu contact là tổ chức)  
 **email (bắt buộc)**: email  
-**phone (bắt buộc)**: số điện thoại  
+**phone (bắt buộc)**: số điện thoại  (+CC-YYYYYYYYY)
 **fax**: fax  
 **address (bắt buộc)**: địa chỉ  
 **country (bắt buộc)**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
