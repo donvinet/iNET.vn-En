@@ -1,28 +1,28 @@
 # [Public API](#public-api)
 * [Whois](#whois)
-* [Kiểm tra bản ghi](#kiểm-tra-bản-ghi)
+* [Check record](#kiểm-tra-bản-ghi)
 ## [Whois](#whois)
-Whois tên miền bất kỳ
+Whois any domain name
 > **API:** /api/public/whois/v1/whois/directly 
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "domainName": "example.vn"
 }
 ```
-**domainName**: tên miền
+**domainName**: Domain name
 
-## [Kiểm tra bản ghi](#lookup)
-Kiểm tra bản ghi tên miền bất kỳ
+## [Check record](#lookup)
+Whois any domain name
 > **API:** /api/public/nslookup/v1/nslookup/lookup  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "domain": "example.vn",
    "type": "lookup"
 }
 ```
-**domain (bắt buộc)**: tên miền  
-**type (bắt buộc)**: loại bản ghi[lookup, ipv4, ipv6, cname, mx, ns, soa, srv, txt]
+**domain (required)**: Domain name  
+**type (required)**: type of record[lookup, ipv4, ipv6, cname, mx, ns, soa, srv, txt]
