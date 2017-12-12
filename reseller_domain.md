@@ -48,7 +48,7 @@ Search Reseller's domain list
 **idnName**: Vietnamese domain name  
 **registrant**: Entity name  
 **suffix**: domain extension  
-**registrar**: registrar [{'hitek': 'tên miền .vn'}]  
+**registrar**: registrar [{'DOTVN': 'tên miền .vn'}]  
 **status**: domain status[{'active': 'active', {'suspended': 'suspended'}, {'deleted': 'deleted'}]  
 **contract**: have a declaration? true/false  
 **verifyStatus**: domain confirm? true/false  
