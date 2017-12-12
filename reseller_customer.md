@@ -1,17 +1,17 @@
-# [Khách hàng](#customer)
-* [Danh sách](#danh-sách)
-* [Tạo mới](#tạo-mới)
-* [Cập nhật thông tin](#cập-nhật-thông-tin)
-* [Quên mật khẩu](#quên-mật-khẩu)
-* [Cập nhật mật khẩu](#cập-nhật-mật-khẩu)
-* [Chi tiết](#cập-nhật-mật-khẩu)
-* [Tạm ngưng](#tạm-ngưng)
-* [Kích hoạt](#kích-hoạt)
-## [Danh sách](#search)
-Tìm kiếm khách hàng của đại lý
+# [Customer](#customer)
+* [List](#danh-sách)
+* [Create new](#tạo-mới)
+* [Update information](#cập-nhật-thông-tin)
+* [Forgot password](#quên-mật-khẩu)
+* [Update password](#cập-nhật-mật-khẩu)
+* [Detail](#cập-nhật-mật-khẩu)
+* [Hold](#tạm-ngưng)
+* [Active](#kích-hoạt)
+## [List](#search)
+Find Reseller's customers
 > **API:** /api/rms/v1/customer/search  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **MethodMe:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    "email": "querystring",
@@ -23,19 +23,19 @@ Tìm kiếm khách hàng của đại lý
    "toCreatedDate": "01/01/2017 00:00"
 }
 ```
-**email**: email khách hàng  
-**fullname**: tên đầy đủ   
-**phone**: số điện thoại  
-**page**: trang, mặc định 0  
-**pageSize**: số lượng KH lấy về, mặc định 30  
-**fromCreatedDate**: ngày tạo mới từ(MM/DD/YYYY HH:MI)  
-**toCreatedDate**: ngày tạo mới tới(MM/DD/YYYY HH:MI)  
+**email**: customer email  
+**fullname**: full name   
+**phone**:phone  
+**page**: page, default 0  
+**pageSize**: number of clients return, default 30   
+**fromCreatedDate**: create date from (MM/DD/YYYY HH:MI)  
+**toCreatedDate**: create date to (MM/DD/YYYY HH:MI)  
 
-## [Tạo mới](#create)
-Tạo một khách hàng mới
+## [Create new](#create)
+Create a new customer
 > **API:** /api/rms/v1/customer/create  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "email": "customer1@examples.vn",
@@ -46,26 +46,26 @@ Tạo một khách hàng mới
    "birthday": "01/01/2017 00:00", 
    "country": "VN", 
    "province": "HNI", 
-   "address": "Địa chỉ 1",
-   "phone": "Điện thoại 1",
+   "address": "Address 1",
+   "phone": "phone 1",
 }
 ```
-**email (bắt buộc)**: email khách hàng  
-**password (bắt buộc)**: mật khẩu  
-**fullname (bắt buộc)**: họ [tên đệm] tên(ví dụ: Nguyễn Văn A)  
-**organizationName**: tên tổ chức  
-**gender**: giới tính ['male', 'female']  
-**birthday**: ngày sinh  
-**country**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
-**province**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
-**address (bắt buộc)**: địa chỉ  
-**phone (bắt buộc)**: số điện thoại(+CC-YYYYYYYYY)  
+**email (required)**: customer email  
+**password (required)**: password
+**fullname (required)**: Last name [middle name] firsr name(example: Nguyễn Văn A)  
+**organizationName**: Name of organization 
+**gender**: gender ['male', 'female']  
+**birthday**: birthday  
+**country**: [country code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
+**province**: [province code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
+**address (required)**: address  
+**phone (required)**: phine number(+CC-YYYYYYYYY)  
 
-## [Cập nhật thông tin](#update)
-Cập nhật thông tin khách hàng
+## [Update information](#update)
+Update customer's information
 > **API:** /api/rms/v1/customer/update  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    "id": 0,
@@ -73,40 +73,40 @@ Cập nhật thông tin khách hàng
    "organizationName": "Company A",
    "gender": "male", 
    "birthday": "01/01/2017 00:00", 
-   "country": "VN", //Danh sách quốc gia tại đây
-   "province": "HNI", //Danh sách tỉnh thành tại đây
-   "address": "Địa chỉ 1",
-   "phone": "Điện thoại 1",
+   "country": "VN", //List country at here
+   "province": "HNI", //List privince at here
+   "address": "Sddress 1",
+   "phone": "Phone 1",
 }
 ```
-**id (bắt buộc)**: id khách hàng   
-**fullname (bắt buộc)**: họ [tên đệm] tên(ví dụ: Nguyễn Văn A)  
-**organizationName**: tên tổ chức  
-**gender**: giới tính ['male', 'female']  
-**birthday**: ngày sinh  
-**country**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
-**province**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
-**address (bắt buộc)**: địa chỉ  
-**phone (bắt buộc)**: số điện thoại(+CC-YYYYYYYYY)  
+**id (required)**: customer ID
+**fullname (required)**: last name [middle name] first name(example: Nguyễn Văn A)  
+**organizationName**: Name of organization  
+**gender**: gender ['male', 'female']  
+**birthday**: birthday  
+**country**: [Country code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
+**province**: [Province code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
+**address (required)**: address
+**phone (required)**: phone (+CC-YYYYYYYYY)  
 
 
-## [Quên mật khẩu](#forgotpassword)
-Lấy mã token quên mật khẩu đăng nhập của khách hàng, thông tin nhập vào là email
+## [Forgot password](#forgotpassword)
+Get tokens forgotten login password of the customer, entered information is email
 > **API:** /api/rms/v1/customer/forgotpassword  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    "email": "customer@example.vn"
 }
 ```
-**email (bắt buộc)**: email khách hàng   
+**email (required)**: customer email   
 
-## [Cập nhật mật khẩu](#changepassword)
-Cập nhật mật khẩu đăng nhập của khách hàng
+## [change password](#changepassword)
+Update customer's login password
 > **API:** /api/rms/v1/customer/changepassword  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "id": 0,
@@ -114,53 +114,53 @@ Cập nhật mật khẩu đăng nhập của khách hàng
    "passwordForgotToken": "token"//
 }
 ```
-**id (bắt buộc)**: id khách hàng   
-**password (bắt buộc)**: id khách hàng   
-**passwordForgotToken (bắt buộc)**: [token quên mật khẩu](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_customer.md#quên-mật-khẩu)   
+**id (required)**: customer's id    
+**password (required)**: customer's id   
+**passwordForgotToken (required)**: [password Forgot Token](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_customer.md#forgot-pasword)   
 
-## [Chi tiết](#get)
-Lấy thông tin khách hàng qua id
+## [Detail](#get)
+Get customer information via id
 > **API:** /api/rms/v1/customer/get
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id khách hàng   
+**id (required)**: customer's id  
 
-Lấy thông tin khách hàng qua email
+Get customer information via email
 > **API:** /api/rms/v1/customer/getbyemail  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "email": "customer@example.vn"
 }
 ```
-**email (bắt buộc)**: email khách hàng   
+**email (required)**: customer's email   
 
-## [Tạm ngưng](#suspend)
-Tạm ngưng tài khoản khách hàng
+## [suspend](#suspend)
+Suspend customer account
 > **API:** /api/rms/v1/customer/suspend  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**  
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id khách hàng  
+**id (required)**: customer's id
 
-## [Kích hoạt](#active)
-Kích hoạt lại tài khoản khách hàng
+## [Active](#active)
+Cctivate customer accounts
 > **API:** /api/rms/v1/customer/active  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **ody should be a JSON object (JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id khách hàng  
+**id (required)**: customer's id
