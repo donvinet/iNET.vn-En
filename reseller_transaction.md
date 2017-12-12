@@ -1,11 +1,11 @@
-# [Giao dịch](#transaction)
-* [Danh sách](#danh-sách)
-* [Chi tiết](#chi-tiết)
-## [Danh sách](#search)
-Tìm kiếm giao dịch của đại lý
+# [Transaction](#transaction)
+* [List](#danh-sách)
+* [Detail](#chi-tiết)
+## [List](#search)
+Search Reseller's transaction
 > **API:** /api/rms/v1/transaction/list  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "page": 0,
@@ -21,11 +21,11 @@ Tìm kiếm giao dịch của đại lý
    "toCreatedDate": "01/01/2017 00:00"
 }
 ```
-**page**: trang, mặc định 0  
-**pageSize**: số lượng KH lấy về, mặc định 30  
-**onlyOrganization**: chỉ là giao dịch của riêng đại lý, không bao gồm đại lý con, mặc định false  
-**type**: loại giao dịch[{'invoice': 'hóa đơn'}, {'refund': 'hoàn phí'}, {'receipt': 'nạp quỹ'}, {'arrear': 'truy thu'}]  
-**description**: mô tả giao dịch  
+**page**: page, default 0  
+**pageSize**: Number of customers to pick up, default 30  
+**onlyOrganization**: Only transaction of Reseller, excluding sub-Reseller, the default is false  
+**type**: Type of transaction [{'invoice': 'invoice'}, {'refund': 'refund'}, {'receipt': 'receipt'}, {'arrear': 'arrear'}]  
+**description**: description  
 **transactionKey**: mã giao dịch[{'register': 'đăng ký mới'},{'renew': 'duy trì'},{'change-registrant': 'đổi tên chủ thể'},
 {'protect-privacy': 'ẩn thông tin'},{'transfer': 'chuyển nhà đăng ký'},{'registry-lock': 'registry lock'},{'registrar-lock': 'registrar lock'},
 {'change-dns': 'đổi dns'},{'upgrade-plan': 'nâng cấp gói'},{'modify-plan': 'tùy chỉnh gói'},{'backorder': 'đặt chỗ'}]  
