@@ -76,7 +76,7 @@ Whois existence of the domain can be registered or not
 **idnName**: Vietnamese domain name  
 **registrar (required)**: registrar [{'hitek': 'tên miền .vn'}]
 
-## [Chuyển mã puny code tên miền tiếng việt](#validateidnname)
+## [Transfer puny code for Vietnames domain name](#validateidnname)
 Transfer puny code for Vietnames domain name
 > **API:** /api/rms/v1/domain/validateidnname  
 > **Method:** POST  
@@ -151,7 +151,7 @@ Domain registration
    ]
 }
 ```
-**name (required)**: domain, if it is Vietnamese domain name is the punnymode of the idnName field
+**name (required)**: domain, if Vietnamese domain name is the punnymode of the idnName field
 **idnName**: Vietnamese domain name 
 **period (required)**: number of years registration, <= 10 years  
 **customerId (required)**: ID Customer  
@@ -199,7 +199,7 @@ Detail information of domain
 ```
 **id (required)**: Domain ID    
 
-## [Uopdate nameserver](#updatedns)
+## [Update nameserver](#updatedns)
 Update nameserver of domain
 > **API:** /api/rms/v1/domain/updatedns
 > **Method:** POST  
