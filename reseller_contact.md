@@ -61,11 +61,11 @@ Create new contact
 **fax**: fax  
 **address (required)**: address  
 **country (required)**: [country code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
-**province (required)**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
+**province (required)**: [province code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
 **dataExtend (required)**: data extend  
 **gender (if contact is personal)**: gender ['male', 'female']  
 **idNumber (if contact is personal)**: Number ID  
-**birthday (if contact is personal)**: irthday, format DD/MM/YYYY  
+**birthday (if contact is personal)**: birthday, format DD/MM/YYYY  
 **taxCode (if contact is organization)**: tax code
 
 ## [Detail](#detail)
