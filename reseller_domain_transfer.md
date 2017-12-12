@@ -19,8 +19,8 @@ Search list of domain change registrar
 }
 ```
 **page**: page, default 0  
-**pageSize**: số lượng KH lấy về, mặc định 30  
-**name**: tên miền  
+**pageSize**: number of clients return, default 30  
+**name**: Domain  
 
 ## [Mở khóa](#unlock)
 Unlock domain name to switch to new registrar
