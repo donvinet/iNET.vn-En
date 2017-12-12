@@ -22,18 +22,18 @@ Search Reseller's transaction
 }
 ```
 **page**: page, default 0  
-**pageSize**: Number of customers to pick up, default 30  
+**pageSize**: number of clients return, default 30  
 **onlyOrganization**: Only transaction of Reseller, excluding sub-Reseller, the default is false  
 **type**: Type of transaction [{'invoice': 'invoice'}, {'refund': 'refund'}, {'receipt': 'receipt'}, {'arrear': 'arrear'}]  
 **description**: description  
-**transactionKey**: mã giao dịch[{'register': 'đăng ký mới'},{'renew': 'duy trì'},{'change-registrant': 'đổi tên chủ thể'},
-{'protect-privacy': 'ẩn thông tin'},{'transfer': 'chuyển nhà đăng ký'},{'registry-lock': 'registry lock'},{'registrar-lock': 'registrar lock'},
-{'change-dns': 'đổi dns'},{'upgrade-plan': 'nâng cấp gói'},{'modify-plan': 'tùy chỉnh gói'},{'backorder': 'đặt chỗ'}]  
-**serviceType**: dịch vụ[{'domain': 'tên miền'}, {'hosting': 'hosting'}, {'email': 'email'}, {'vps': 'Cloud VPS'}]  
-**customerEmail**: email khách hàng  
-**resourceId**: id của dịch vụ(id của tên miền, hosting...)  
-**fromCreatedDate**: ngày tạo mới từ  
-**toCreatedDate**: ngày tạo mới tới  
+**transactionKey**: transaction Key[{'register': 'new registration'},{'renew': 'renew'},{'change-registrant': 'change name of registrant'},
+{'protect-privacy': 'protect privacy'},{'transfer': 'transfer registrar},{'registry-lock': 'registry lock'},{'registrar-lock': 'registrar lock'},
+{'change-dns': 'change dns'},{'upgrade-plan': 'upgrade plan'},{'modify-plan': 'modify-plan'},{'backorder': 'backorder'}]  
+**serviceType**: service[{'domain': 'domain'}, {'hosting': 'hosting'}, {'email': 'email'}, {'vps': 'Cloud VPS'}]  
+**customerEmail**: customer Email 
+**resourceId**: service's id (id of domain, hosting...)  
+**fromCreatedDate**: Created Date From
+**toCreatedDate**: Created Date To 
 
 ## [Detail](#get)
 Get details of the transaction
