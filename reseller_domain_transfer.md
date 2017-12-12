@@ -1,16 +1,16 @@
-# [Chuyển đổi nhà đăng ký](#domaintransfer)
-* [Danh sách](#danh-sách)
-* [Mở khóa](#mở-khóa)
-* [Khóa](#khóa)
-* [Chấp nhận](#chấp-nhận)
-* [Từ chối](#từ-chối)
-* [Gửi yêu cầu](#gửi-yêu-cầu)
-* [Hủy bỏ yêu cầu](#hủy-bỏ-yêu-cầu)
-## [Danh sách](#search)
-Tìm kiếm danh sách tên miền chuyển đổi nhà đăng ký
+# [Change Registrar](#domaintransfer)
+* [List](#danh-sách)
+* [Unlock](#mở-khóa)
+* [Lock](#khóa)
+* [Accept](#chấp-nhận)
+* [Reject](#từ-chối)
+* [Send request](#gửi-yêu-cầu)
+* [Cancek request](#hủy-bỏ-yêu-cầu)
+## [List](#search)
+Search list of domain change registrar 
 > **API:** /api/rms/v1/domaintransfer/list  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "page": 0,
@@ -18,63 +18,63 @@ Tìm kiếm danh sách tên miền chuyển đổi nhà đăng ký
    "name": "example.vn"
 }
 ```
-**page**: trang, mặc định 0  
+**page**: page, default 0  
 **pageSize**: số lượng KH lấy về, mặc định 30  
 **name**: tên miền  
 
 ## [Mở khóa](#unlock)
-Mở khóa tên miền để chuyển đổi sang nhà đăng ký mới
+Unlock domain name to switch to new registrar
 > **API:** /api/rms/v1/domaintransfer/unlock  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id tên miền  
+**id (required)**: Domain's ID  
 
-## [Khóa](#lock)
-Khóa tên miền lại
+## [Lock](#lock)
+Lock domain
 > **API:** /api/rms/v1/domaintransfer/lock  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id tên miền  
+**id (required)**: Domain's ID  
 
-## [Chấp nhận](#approve)
-Chấp nhận chuyển đổi nhà đăng ký
+## [Approve](#approve)
+Accept to change registrar
 > **API:** /api/rms/v1/domaintransfer/approve  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id tên miền  
+**id (required)**: Domain's id  
 
-## [Từ chối](#reject)
-Chấp nhận chuyển đổi nhà đăng ký
+## [Reject](#reject)
+Accept to change registrar
 > **API:** /api/rms/v1/domaintransfer/reject  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id tên miền  
+**id (required)**: Domain's ID
 
-## [Gửi yêu cầu](#request)
-Gửi yêu cầu chuyển đổi tên miền
+## [Request](#request)
+Submit request domain transfer
 > **API:** /api/rms/v1/domaintransfer/request  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    "name": "example.vn",
@@ -82,18 +82,18 @@ Gửi yêu cầu chuyển đổi tên miền
    "registrar": "hitek"
 }
 ```
-**name (bắt buộc)**: tên miền  
-**authCode (bắt buộc)**: mã auth code của tên miền  
-**registrar (bắt buộc)**: nhà đăng ký tên miền request
+**name (required)**: Domain
+**authCode (required)**: Domain's auth code
+**registrar (required)**: Registrar request
 
-## [Hủy bỏ yêu cầu](#cancel)
-Hủy bỏ yêu cầu chuyển đổi nhà đăng ký
+## [Cancel](#cancel)
+Cacel request change registrar
 > **API:** /api/rms/v1/domaintransfer/cancel  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object(JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id tên miền  
+**id (required)**: Domain's id
