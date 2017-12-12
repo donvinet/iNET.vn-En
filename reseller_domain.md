@@ -293,7 +293,7 @@ Resend email to verification domain
    "id": 0
 }
 ```
-**id (reqiured)**: Domain ID
+**id (required)**: Domain ID
 
 ## [Change auth code](#changeauthcode)
 Change auth code for domain
