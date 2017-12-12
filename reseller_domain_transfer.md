@@ -5,7 +5,7 @@
 * [Accept](#chấp-nhận)
 * [Reject](#từ-chối)
 * [Send request](#gửi-yêu-cầu)
-* [Cancek request](#hủy-bỏ-yêu-cầu)
+* [Cancel request](#hủy-bỏ-yêu-cầu)
 ## [List](#search)
 Search list of domain change registrar 
 > **API:** /api/rms/v1/domaintransfer/list  
