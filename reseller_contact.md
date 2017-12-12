@@ -22,23 +22,23 @@ Search contact list of reseller
    "province": "querystring"
 }
 ```
-**page**: trang, mặc định 0  
-**pageSize**: số lượng KH lấy về, mặc định 30  
-**fullname**: tên contact  
-**registrar**: nhà đăng ký  
-**organizationName**: tên tổ chức  
+**page**: page, default 0  
+**pageSize**: number of clients return, default 30   
+**fullname**: Contact name
+**registrar**: registrar 
+**organizationName**: Name of organization 
 **email**: email  
-**phone**: số điện thoại  
+**phone**: phone  
 **fax**: fax  
-**address**: địa chỉ  
-**country**: quốc gia  
-**province**: tỉnh thành  
+**address**: address 
+**country**: country 
+**province**: province 
 
-## [Tạo mới](#create)
-Tạo mới contact
+## [Create new](#create)
+Create new contact
 > **API:** /api/rms/v1/contact/create  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "fullname": "Nguyễn Văn A",
@@ -53,29 +53,29 @@ Tạo mới contact
    "dataExtend": "{\"gender\":\"male\",\"idNumber\":\"030810700\",\"birthday\":\"01/01/1971\"}",
 }
 ```
-**fullname (bắt buộc)**: họ [tên đệm] tên(ví dụ: Nguyễn Văn A)  
-**registrar (bắt buộc)**: nhà đăng ký  
-**organizationName**: tên tổ chức(nếu contact là tổ chức)  
-**email (bắt buộc)**: email  
-**phone (bắt buộc)**: số điện thoại  (+CC-YYYYYYYYY)
+**fullname (required)**: last name [middle name] first name (example: Nguyễn Văn A)  
+**registrar (required)**: registrar  
+**organizationName**: Name of organization (if contact is contact)  
+**email (required)**: email  
+**phone (required)**: phone  (+CC-YYYYYYYYY)
 **fax**: fax  
-**address (bắt buộc)**: địa chỉ  
-**country (bắt buộc)**: [mã quốc gia](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
-**province (bắt buộc)**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
-**dataExtend (bắt buộc)**: thông tin thêm contact  
-**gender (nếu contact là cá nhân)**: giới tính ['male', 'female']  
-**idNumber (nếu contact là cá nhân)**: số chứng minh thư  
-**birthday (nếu contact là cá nhân)**: ngày sinh, định dạng DD/MM/YYYY  
-**taxCode (nếu contact là tổ chức)**: mã số thuế  
+**address (required)**: address  
+**country (required)**: [country code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
+**province (required)**: [mã tỉnh thành](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
+**dataExtend (required)**: data extend  
+**gender (if contact is personal)**: gender ['male', 'female']  
+**idNumber (if contact is personal)**: Number ID  
+**birthday (if contact is personal)**: irthday, format DD/MM/YYYY  
+**taxCode (if contact is organization)**: tax code
 
-## [Chi tiết](#detail)
-Chi tiết contact
+## [Detail](#detail)
+Contact details
 > **API:** /api/rms/v1/contact/get  
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id contact  
+**id (required)**: id contact  
