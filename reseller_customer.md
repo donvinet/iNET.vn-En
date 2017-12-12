@@ -52,14 +52,14 @@ Create a new customer
 ```
 **email (required)**: customer email  
 **password (required)**: password
-**fullname (required)**: Last name [middle name] firsr name(example: Nguyễn Văn A)  
+**fullname (required)**: Last name [middle name] first name(example: Nguyễn Văn A)  
 **organizationName**: Name of organization 
 **gender**: gender ['male', 'female']  
 **birthday**: birthday  
 **country**: [country code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#country)  
 **province**: [province code](https://github.com/donvinet/iNET.vn-En/blob/master/reseller_category.md#province)  
 **address (required)**: address  
-**phone (required)**: phine number(+CC-YYYYYYYYY)  
+**phone (required)**: phone number(+CC-YYYYYYYYY)  
 
 ## [Update information](#update)
 Update customer's information
@@ -157,7 +157,7 @@ Suspend customer account
 Cctivate customer accounts
 > **API:** /api/rms/v1/customer/active  
 > **Method:** POST  
-> **ody should be a JSON object (JSON):**   
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "id": 0
