@@ -22,7 +22,7 @@ Search list of domain change registrar
 **pageSize**: number of clients return, default 30  
 **name**: Domain  
 
-## [Mở khóa](#unlock)
+## [Unlock](#unlock)
 Unlock domain name to switch to new registrar
 > **API:** /api/rms/v1/domaintransfer/unlock  
 > **Method:** POST  
