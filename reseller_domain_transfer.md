@@ -59,7 +59,7 @@ Accept to change registrar
 **id (required)**: Domain's id  
 
 ## [Reject](#reject)
-Accept to change registrar
+Reject to change registrar
 > **API:** /api/rms/v1/domaintransfer/reject  
 > **Method:** POST  
 > **Body should be a JSON object(JSON):**   
