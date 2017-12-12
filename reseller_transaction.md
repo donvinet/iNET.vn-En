@@ -35,15 +35,15 @@ Search Reseller's transaction
 **fromCreatedDate**: ngày tạo mới từ  
 **toCreatedDate**: ngày tạo mới tới  
 
-## [Chi tiết](#get)
-Lấy thông tin chi tiết của giao dịch
+## [Detail](#get)
+Get details of the transaction
 > **API:** /api/rms/v1/transaction/detail
-> **Phương thức:** POST  
-> **Dữ liệu data body mẫu(JSON):**   
+> **Method:** POST  
+> **Body should be a JSON object (JSON):**   
 ```
 {
    "id": 0
 }
 ```
-**id (bắt buộc)**: id của giao dịch 
+**id (required)**: Transaction's ID
 
