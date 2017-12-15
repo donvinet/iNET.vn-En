@@ -283,7 +283,7 @@
         'Chuyển sang đại lý mới': 'Change to new reseller',
         'Đại lý mới': 'New  Reseller',
         'Chuyển đổi': 'Change',
-        'Hiện tại chưa hỗ trợ ẩn thông tin tên miền .vn và một số đuôi tên miền quốc tế đặc biệt, chi tiết tại đây': '',
+        'Hiện tại chưa hỗ trợ ẩn thông tin tên miền .vn và một số đuôi tên miền quốc tế đặc biệt, chi tiết tại đây': 'It is not currently supported to hide .vn domain information and some special international domain extensions, details here',
         'Ẩn thông tin tên miền': 'Ẩn thông tin tên miền',
         'Cập nhật trạng thái tên miền': 'Cập nhật trạng thái tên miền',
         'Trạng thái mới': 'Trạng thái mới',
